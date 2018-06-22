@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conference DApp</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h1><center>Conference DApp</center></h1>
+<hr/>
+  <div class="section">
+        <div class="left"><b>Contract deployed at: </b><div id="confAddress"></div></div>
+    <div class="middle"><b>Contract Balance: </b><div id="confBalance">0</div></div>
+    
+  </div>
+  <div class="clear"></div>
+  <div class="section">
+    <label>Organizer: <input type="text" id="confOrganizer" readonly /></label>
+  </div>
+  <div class="section">
+    <label>Quota: <input type="text" id="confQuota" /></label>
+      <button id="changeQuota">Change</button>
+      <span id="changeQuotaResult"></span>
+  </div>
+  <div class="section">
+    Registrants: <span id="numRegistrants">0</span>
+  </div>
+
+  <hr/>
+  
+  <div class="section">
+    <h2>Buy a Ticket</h2>
+    Ticket Price: <input type="text" id="ticketPrice" value="1.00" readonly/> 
+ Buyer Address: <input type="text" id="buyerAddress" />
+      <button id="buyTicket">Buy Ticket</button>
+      <span id="buyTicketResult"></span>
+  </div>
+
+  <hr/>
+  <div class="section">
+    <h2>Buy Multiple Tickets</h2>
+    Ticket Price: <input type="text" id="ticketPrice" value="1.00" readonly/> 
+      Number of Tickets: <input type="text" id="ticketsCount" value="1" />
+      Buyer Address: <input type="text" id="mbuyerAddress" />
+      <button id="buyTickets">Buy Tickets</button>
+      <span id="buyTicketsResult"></span>
+  </div>
+
+  <hr/>
+  <div class="section">
+    <h2>Refund a Ticket</h2>
+    Ticket Price: <input type="text" id="ticketPrice" value="1.00" readonly/> 
+      Buyer Address: <input type="text" id="refBuyerAddress" />
+      <button id="refundTicket">Refund Ticket</button>
+      <span id="refundTicketResult"></span>
+  </div>
+
+  <hr/>
+  <div class="section">
+    <h2>Destroy Contract<sub>(Speaker will get 80% of contract Balance, organiser will get 20%)</sub></h2>
+      Speaker Address: <input type="text" id="speakerAddress" readonly/>
+      <button id="destroyContract">Destroy Contract</button>
+      <span id="destroyContractResult"></span>
+  </div>
+
+  <hr/>
+</body>
+</html> 
