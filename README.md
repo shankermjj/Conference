@@ -1,6 +1,5 @@
 # Conferenc-Dapp
 
-# Blockchain-Flight_Dapp
 It's Basic Blockchain-Dapp for Creating Conference_Dapp[Registering Conference, Refunding amount if not attending Conference,owner can change the Conference Capacity] with the Help of Solidity Programming[SmartContract]+Truffle[Migrate/Delopy/Test in Private Blockchain] + Front-end(HTML+JS+CSS)
 
 ->>Installations:
